@@ -1,24 +1,26 @@
 {
   "name": "real-time-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "In de voorafgaande blokken van de minor heb ik geleerd hoe je met de hand een web app bouwt die zuinig draait en optimaal gebruikt maakt van alle functionaliteiten die de browser biedt. In dit vak wordt het tijd dat al deze vaardigheden worden toegepast in een real-time applicatie.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify ./client/*.js > ./public/assets/js/bundle.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nooroel-imamdi/real-time-web.git"
   },
-  "keywords": [
-    "real",
-    "time",
-    "web"
-  ],
   "author": "Nooroel Imamdi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nooroel-imamdi/real-time-web/issues"
   },
-  "homepage": "https://github.com/nooroel-imamdi/real-time-web#readme"
+  "homepage": "https://github.com/nooroel-imamdi/real-time-web#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "browserify": "^14.3.0"
+  }
 }
