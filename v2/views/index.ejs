@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IO Chat</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <section id="user-form-area">
+      <form id="user-form">
+        <fieldset class="form-group">
+          <label>Enter username</label>
+          <input class="form-control" id="username" />
+          <button type="submit">Login</button>
+        </fieldset>
+      </form>
+    </section>
+    <section id="message-area">
+      <aside>
+        <div class="well">
+          <h3>Online users</h3>
+          <ul id="users" class="list-group"></ul>
+        </div>
+      </aside>
+      <section>
+        <article id="chat" class="chat">
+        </article>
+        <form id="message-form">
+          <fieldset class="form-group">
+            <label>Enter message</label>
+            <textarea class="form-control" id="message"></textarea>
+            <button type="submit">Send message</button>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+
+    <script src="js/build.js"></script>
+  </body>
+</html>

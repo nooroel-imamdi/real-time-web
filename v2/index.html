@@ -6,9 +6,19 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <section>
+    <section id="user-form-area">
+      <form id="user-form">
+        <fieldset class="form-group">
+          <label>Enter username</label>
+          <input class="form-control" id="username" />
+          <button type="submit">Login</button>
+        </fieldset>
+      </form>
+    </section>
+    <section id="message-area">
       <aside>
         <div class="well">
           <h3>Online users</h3>
@@ -20,7 +30,7 @@
 
         </article>
         <form id="message-form">
-          <fieldset class="formgroup">
+          <fieldset class="form-group">
             <label>Enter message</label>
             <textarea class="form-control" id="message"></textarea>
             <button type="submit">Send message</button>
@@ -29,12 +39,18 @@
       </section>
     </section>
 
-    <script>
+    <!-- <script>
       $(function(){
         var socket = io.connect();
         var $messageForm = $('#message-form');
         var $message = $('#message');
         var $chat = $('#chat');
+        var $messageArea = $('#message-area');
+        var $userFormArea = $('#user-form-area');
+        var $userForm = $('#user-form');
+        var $users = $('#users');
+        var $username = $('#username');
+
 
         $messageForm.submit(function(e){
           e.preventDefault();
@@ -43,10 +59,30 @@
         });
 
         socket.on('new message', function(data){
-          $chat.append('<div class="well">' + + '</div>');
+          $chat.append('<div class="well"><strong>'+ data.user + '</strong>' + data.msg + '</div>');
+        });
+
+        $userForm.submit(function(e){
+          e.preventDefault();
+          socket.emit('new user', $username.val(), function(data){
+            if(data){
+              $userFormArea.hide();
+              $messageArea.show();
+            }
+          });
+          $username.val('');
+        });
+
+        socket.on('get users', function(data){
+          var html = '';
+          for(i = 0; i < data.length; i++){
+            html += '<li class="list-group-item">'+ data[i] +'</li>';
+          }
+          $users.html(html);
         });
 
       });
-    </script>
+    </script> -->
+    <!-- <script src="js/build.js"></script> -->
   </body>
 </html>
