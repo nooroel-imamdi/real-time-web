@@ -7,7 +7,7 @@ In de voorafgaande blokken van de minor heb ik geleerd hoe je met de hand een we
 
 ## Week 1
 
-### To Do-list (week 1)
+### To Do-list
 - [x] Init
 - [x] Aanmaken repository + Readme
 - [x] Kies een code-style
@@ -25,7 +25,7 @@ De app werkt in `jQuery`, maar nog niet in de naar `Vanilla JavaScript` omgeschr
 
 ## Week 2
 
-### To Do-list (week 2)
+### To Do-list
 - [ ] Chat App werkend `Vanilla JavaScript`
 - [ ] Deploy de app op het web
 - [ ] ... en wat er nog komen gaat
