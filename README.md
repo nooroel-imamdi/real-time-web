@@ -21,11 +21,12 @@ Week 1 stond in het teken van een verkenningstocht naar `socket.io`. Hierbij ben
 In de tutorial wordt gebruik gemaakt van `jQuery`. De uitdaging was hierbij om naast een werkende chat, de code van `jQuery` naar `Vanilla JavaScript` te schrijven.
 
 ### Resultaat
-De app werkt in `jQuery`, maar nog niet in de naar `Vanilla JavaScript` omgeschreven versie.
+De app werkt in `jQuery` (zie branche *jQuery-chat-app* ), maar nog niet in de naar `Vanilla JavaScript` omgeschreven versie.
 
 ## Week 2
 
 ### To Do-list
 - [ ] Chat App werkend `Vanilla JavaScript`
+- [ ] Styling chat
 - [ ] Deploy de app op het web
 - [ ] ... en wat er nog komen gaat
