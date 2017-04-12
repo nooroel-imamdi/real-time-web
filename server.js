@@ -18,14 +18,14 @@ app.set('views', path.join(__dirname, '/views'));
 // Set Static Path
 app.use(express.static(path.join(__dirname, '/public')));
 
-// app.get('/', function(req, res){
-//   res.sendFile(__dirname + '/index.html');
-// });
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
 
 // Routing
-app.get('/', function (req, res) {
-    res.render('index.ejs')
-});
+// app.get('/', function (req, res) {
+//     res.render('index.ejs')
+// });
 
 // // Socket.io
 io.sockets.on('connection', function(socket){
