@@ -1,13 +1,13 @@
 var socket = io.connect();
-var messageForm = document.getElementById('message-form');
-var message = document.getElementById('message');
-var chat = document.getElementById('chat');
-var messageArea = document.getElementById('message-area');
+var messageForm = document.querySelector('#message-form');
+var message = document.querySelector('#message');
+var chat = document.querySelector('#chat');
+var messageArea = document.querySelector('#message-area');
 
-var userFormArea = document.getElementById('user-form-area');
-var userNameForm = document.getElementById('user-name-form');
-var users = document.getElementById('users');
-var username = document.getElementById('username');
+var userFormArea = document.querySelector('#user-form-area');
+var userNameForm = document.querySelector('#user-name-form');
+var users = document.querySelector('#users');
+var username = document.querySelector('#username');
 
 // socket.on('new message', newMessage);
 // messageForm.addEventListener('submit', submitMessage);
@@ -19,10 +19,12 @@ var username = document.getElementById('username');
 //   message.val('');
 // });
 
-messageForm.addEventListener('click', function(e){
+socket.on('new message' , newMessage);
+
+messageForm.addEventListener('submit', function(e){
   e.preventDefault();
-  socket.emit('send message', message.value());
-  message.value('');
+  socket.emit('send message', message.value);
+  message.value = '';
 });
 
 // function submitMessage(e){
@@ -38,15 +40,14 @@ messageForm.addEventListener('click', function(e){
 // });
 
 function newMessage(data){
-  socket.on('new message');
   var list = document.createElement('li');
   list.className = "message";
   list.innerHTML = '<strong>' + data.user + '</strong>' + data.msg;
 
-  document.querySelector('#chat').appendChild(li);
+  document.querySelector('#chat').appendChild(list);
 };
 
-userNameForm.addEventListener('click', function(e){
+userNameForm.addEventListener('submit', function(e){
   e.preventDefault();
   socket.emit('new user', username.value, function(data){
     if(data){
@@ -54,7 +55,7 @@ userNameForm.addEventListener('click', function(e){
       messageArea.style.display = 'block';
     }
   });
-  username.value('');
+  // username.value('');
 });
 
 // userForm.submit(function(e){
