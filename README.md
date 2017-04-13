@@ -23,6 +23,11 @@ In de tutorial wordt gebruik gemaakt van `jQuery`. De uitdaging was hierbij om n
 ### Resultaat
 De chat app is uiteindelijk omgebouwd naar een werkende app dat functioneert middels `Vanilla JavaScript`. Hetgeen wat nog niet de aandacht heeft gekregen deze week is de styling. De focus lag voornamelijk op het werkend krijgen van een applicatie met behulp van Socket. De styling staat voor komende op het programma.
 
+#### Features
+- Gebruikers kunnen inloggen
+- De namen van de gebruikers worden getoond in een lijst *Online users*
+- Gebruikers kunnen berichten naar elkaar sturen die live worden geupdate
+
 #### Deploying met `now`
 Met behulp van `now` is het gelukt de code te deployen.
 
