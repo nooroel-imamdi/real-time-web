@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "webpack": "webpack",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/browserify ./client/*.js -o ./public/js/build.js"
   },

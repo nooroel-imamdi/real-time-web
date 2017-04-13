@@ -43,7 +43,6 @@ io.sockets.on('connection', function(socket){
   // Send message
   socket.on('send message', function(data){
     io.sockets.emit('new message', {msg: data, user: socket.username});
-    console.log(data);
   });
 
   // New users
