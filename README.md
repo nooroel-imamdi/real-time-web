@@ -28,7 +28,7 @@ Met behulp van `now` is het gelukt de code te deployen.
 
 Live: https://ioapp-dmemcppxof.now.sh/
 
-#### Bug
+#### Bug #1
 Op dit moment bevindt zich nog een bug in de list *Online users*. Het probleem hierbij is dat de naam van de nieuwe gebruikers op één regel wordt samengevoegd met eerdere gebruikers die ingelogd staan.
 
 Deze bug zal toegevoegd worden aan de to do-list van volgende week.
@@ -36,6 +36,6 @@ Deze bug zal toegevoegd worden aan de to do-list van volgende week.
 ## Week 2
 
 ### To Do-list
-- [ ] Bugfxing
+- [ ] Fixing bug #1
 - [ ] Styling chat
 - [ ] ... en wat er nog komen gaat
