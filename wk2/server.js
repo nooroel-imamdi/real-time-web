@@ -5,6 +5,7 @@ var express = require('express');
 var socketio = require('socket.io');
 var fs = require('fs');
 var twit = require('twit');
+var browserify = require('browserify');
 
 // Configuration
 dotenv.config();

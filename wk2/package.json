@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "build": "./node_modules/.bin/browserify ./client/*.js -o ./public/js/build.js"
   },
   "author": "Nooroel Imamdi",
   "license": "ISC",
