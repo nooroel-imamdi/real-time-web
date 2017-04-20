@@ -46,3 +46,5 @@ An asynchronous client library for the Twitter REST and Streaming API's.
 
 ## Referenties
 - [Tutorial nishantmendiratta ](https://github.com/nishantmendiratta/Node-JS/wiki/Combining-realtime-twitter-data-with-socket.io-and-streaming-data-at-browser)
+- [npm Twit API ](https://github.com/nishantmendiratta/Node-JS/wiki/Combining-realtime-twitter-data-with-socket.io-and-streaming-data-at-browser)
+https://github.com/Razpudding/realtime-slack/blob/master/index.js
