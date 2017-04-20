@@ -43,3 +43,6 @@ npm start
 
 ## Twitter API
 An asynchronous client library for the Twitter REST and Streaming API's.
+
+## Referenties
+- [Tutorial nishantmendiratta ](https://github.com/nishantmendiratta/Node-JS/wiki/Combining-realtime-twitter-data-with-socket.io-and-streaming-data-at-browser)
