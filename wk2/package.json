@@ -16,6 +16,7 @@
     "express": "^4.15.2",
     "fs": "0.0.1-security",
     "install": "^0.8.8",
+    "mongodb": "^2.2.26",
     "request": "^2.81.0",
     "socket.io": "^1.7.3"
   },
