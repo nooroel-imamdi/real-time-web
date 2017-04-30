@@ -2,14 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Mensen die jou niet wederzijds volgen</title>
   </head>
   <body>
     <section>
       <h1>Mensen die jou niet wederzijds volgen</h1>
       <ul>
         <% for(var i = 0; i < users.length; i++) {%>
-          <li><a href="https://twitter.com/<%- users[i].screen_name%>" title="<%- users[i].name%>" target="_blank"><%- users[i].screen_name %></a></li>
+          <li>
+            <span><img src="<%- users[i].avatar%>" alt="<%- users[i].screen_name%>" /></span>
+            <a href="https://twitter.com/<%- users[i].screen_name%>" title="<%- users[i].name%>" target="_blank"><%- users[i].screen_name %></a>
+          </li>
         <% } %>
       </ul>
     </section>
