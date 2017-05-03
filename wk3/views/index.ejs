@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Wie volg jij die jouw niet volgt?</title>
-  </head>
-  <body>
+<%- include partials/head.ejs %>
+
     <section>
-      <h1>Wie volg jij die jouw niet volgt?</h1>
-      <form action="get_users" method="POST">
-        <input type="text" name="handle">
+      <h1>Waar wil jij de wereld over zien spreken?</h1>
+      <form action="/results" method="POST">
+        <input type="text" name="handle" class="input-user-field">
         <input type="submit" value="Get users!">
       </form>
     </section>
-  </body>
-</html>
+
+<%- include partials/footer.ejs %>
