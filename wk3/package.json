@@ -4,7 +4,8 @@
   "description": "real-time web",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "expose": "ngrok http 3000"
   },
   "keywords": [
     "real-time-web",
@@ -22,7 +23,9 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "express-validator": "^3.2.0",
     "fs": "0.0.1-security",
+    "ngrok": "^2.2.8",
     "request": "^2.81.0",
     "socket.io": "^1.7.3",
     "twitter": "^1.7.0"
